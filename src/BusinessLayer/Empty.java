@@ -1,0 +1,41 @@
+package BusinessLayer;
+
+public class Empty extends Tile {
+	
+    public Empty(Position position) {
+        super('.', position);
+        
+    }
+    
+    @Override
+    public String contactWith(Player player) {
+        return "";
+    }
+    
+    @Override
+    public String contactWith(Enemy enemy) {
+        return "";
+    }
+    
+    @Override
+    public String contactWith(Empty empty) {
+        return "";
+    }
+    
+    @Override
+    public String contactWith(Wall wall) {
+        return "";
+    }
+    
+    public int acceptContact(TileVisitor tileVisitor) {
+        return 0; //not important
+    }
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+    
+
+}
