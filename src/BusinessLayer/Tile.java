@@ -9,7 +9,7 @@ public abstract class Tile implements TileVisitor, TileVisited {
 	//constructor:
 	public Tile(char typeTile, Position position) {
 		this.typeTile = typeTile;
-		this.position = position;
+		this.position = position; //
 	}
 	
 	//methods:
